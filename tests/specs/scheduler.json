@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Manual morning summary trigger",
+    "steps": [
+      {
+        "send": { "callback": "scheduler:summary" },
+        "expect": [
+          { "method": "answerCallbackQuery" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Manual alert check trigger",
+    "steps": [
+      {
+        "send": { "callback": "scheduler:alerts" },
+        "expect": [
+          { "method": "answerCallbackQuery" }
+        ]
+      }
+    ]
+  }
+]
