@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Add Custom Ticker",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Enter a custom cryptocurrency ticker symbol"
+            }
+          }
+        ],
+        "send": {
+          "callback": "watchlist:custom"
+        }
+      }
+    ]
+  }
+]
